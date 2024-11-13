@@ -14,8 +14,8 @@ model = joblib.load('random_forest_model.pkl')
 
 
 @app.route("/")
-def welcome():
-    return "Welcome to gym!"
+def home():
+    return jsonify(message="welcome to the Gym!")
 
 
 @app.route('/predict', methods=['POST'])
