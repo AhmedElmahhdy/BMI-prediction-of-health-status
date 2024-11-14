@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model
-model = joblib.load('random_forest_model.pkl')
+model = joblib.load('https://drive.google.com/file/d/18D-Od0PWrpCvkavle-wT9fkXx0Sd-wO6/view?usp=sharing')
 
 @app.route("/")
 def home():
